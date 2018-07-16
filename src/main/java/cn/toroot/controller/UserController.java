@@ -23,6 +23,7 @@ public class UserController {
     @RequestMapping(value = "/add")
     public void addUser(User user){
         userService.addUser(user);
+        System.out.println("Success!");
     }
 
     @ResponseBody
